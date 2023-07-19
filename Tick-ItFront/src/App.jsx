@@ -6,7 +6,7 @@ import Context from './Context'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [cartInfo, setCartInfo] = useState('')
 
   return (
     <>
