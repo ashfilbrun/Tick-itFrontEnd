@@ -17,6 +17,7 @@ const addToCart = (eventId, variantInfo) => {
   return (
     <div className='modal'>
       <div className='shoppingCart'>
+        <
       </div>
     </div>
   )
