@@ -7,6 +7,7 @@ import Nav from './Nav'
 export default function Header () {
   return (
     <div className='container'>
+      <h1> hello </h1>
       <div>
         <div className='header'>
           <Link to='/'>

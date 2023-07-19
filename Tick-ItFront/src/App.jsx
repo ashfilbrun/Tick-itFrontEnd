@@ -7,7 +7,6 @@ import './App.css'
 
 function App() {
 
-
   return (
     <div className='app'>
       <Context.Provider>
@@ -18,5 +17,4 @@ function App() {
     </div>
   )
 }
-
 export default App

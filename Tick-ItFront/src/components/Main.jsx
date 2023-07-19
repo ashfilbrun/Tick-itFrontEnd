@@ -11,6 +11,7 @@ export default function Main () {
   // const { cartInfo, setCartInfo } = useContext(Context)
   // console.log(cartInfo)
 
+
   return (
     <>
       <Routes>
