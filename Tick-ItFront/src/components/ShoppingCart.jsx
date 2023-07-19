@@ -17,6 +17,7 @@ const addToCart = (eventId, variantInfo) => {
   return (
     <div className='modal'>
       <div className='shoppingCart'>
+        <h3>Shopping Cart</h3>
         <div className='item'>
           <item />
           <button id='removeBtn'>Delete Item</button>
