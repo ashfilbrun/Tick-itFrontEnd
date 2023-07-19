@@ -29,6 +29,3 @@ const addToCart = (eventId, variantInfo) => {
     </div>
   )
 }
-
-
-export default ShoppingCart
