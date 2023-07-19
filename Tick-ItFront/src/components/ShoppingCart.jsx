@@ -3,19 +3,21 @@ import { useState, useEffect, useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Context from '../Context';
 
-const addToCart = (eventId, variantInfo) => {
-  const [cart, setCart] = useState()
-
-  // useEffect(() => {
-  //   commerce.cart.retrieve()
-  //     .then(res => {
-  //       setCart(res)
-  //     })
-  // })
-
-
-  return (
-    <div className='modal'>
+export default function ShoppingCart() {
+  
+  const addToCart = (eventId, variantInfo) => {
+    const [cart, setCart] = useState()
+    
+    // useEffect(() => {
+      //   commerce.cart.retrieve()
+      //     .then(res => {
+        //       setCart(res)
+        //     })
+        // })
+        
+        
+        return (
+          <div className='modal'>
       <div className='shoppingCart'>
         <h3>Shopping Cart</h3>
         <div className='item'>
@@ -29,3 +31,5 @@ const addToCart = (eventId, variantInfo) => {
     </div>
   )
 }
+}
+
