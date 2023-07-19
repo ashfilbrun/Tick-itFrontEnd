@@ -4,13 +4,14 @@ import Venue from './Venue'
 import VenueList from './VenueList'
 import Event from './Event'
 import EventList from './EventList'
-import Context from './Context'
+import Context from '../Context'
 import ShoppingCart from './ShoppingCart'
 
 export default function Main () {
   const [cart, setCart] = useState('')
   const { cartInfo, setCartInfo } = useContext(Context)
   console.log(cartInfo)
+
 
   return (
     <>
