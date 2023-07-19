@@ -1,3 +1,17 @@
+html {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -5,38 +19,46 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+header {
+  display: flex;
+  flex: column;
+  margin-top: 0;
+  margin-bottom: auto;
+  position: fixed;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-size: 60px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+footer{
+  display: inline-flex;
+  justify-content: center;
+  padding: 10px;
+  margin-top: auto;
 }
 
-.card {
-  padding: 2em;
+button {
+  padding: 5px;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 30%;
 }
 
-.read-the-docs {
-  color: #888;
+.container {
+  padding: 5px;
+}
+
+.navBar {
+  display: flex;
+  flex-direction: row;
+}
+
+.navItems {
+  justify-content: space-around;
+  padding: 5px;
 }
