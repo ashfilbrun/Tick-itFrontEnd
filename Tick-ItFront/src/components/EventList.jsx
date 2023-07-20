@@ -1,8 +1,8 @@
 
 export default function EventList(){
     return(
-        <div>
-            <h1>Event List page</h1>
+        <div className="main-container">
+            <h2>Event List page</h2>
         </div>
     )
 }
