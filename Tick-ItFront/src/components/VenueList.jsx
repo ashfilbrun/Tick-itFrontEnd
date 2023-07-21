@@ -29,7 +29,7 @@ export default function VenueList() {
                             <div className="venueBox">
                                 <h3>{venue.venue_name}</h3>
                                 <ul className="venueUl">
-                                    <li>{venue.venue_name}</li>
+                                    <li><Link to={`${venue.url}`} target="_blank">{venue.venue_name} (more info)</Link></li>
                                     <li>Address: {venue.address}</li>
                                     <li>{venue.description}</li>
                                     <li><Link to={`/VenueList${venue.id}`}><button id="addToCart">See events</button></Link></li>
