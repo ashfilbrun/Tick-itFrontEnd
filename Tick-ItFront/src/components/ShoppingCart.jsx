@@ -27,6 +27,7 @@ export default function ShoppingCart () {
         <button id='subQuantityBtn'>-</button>
       </div>
       <button id='deleteCartBtn'>Empty Shopping Cart</button>
+      <text id='total'>Total</text>
     </div>
   )
 }
