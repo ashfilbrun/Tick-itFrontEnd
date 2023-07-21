@@ -3,7 +3,8 @@ import * as React from 'react'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
-export default function EventList() {
+
+export default function EventList () {
     const [events, setEvents] = useState([])
     const getEvents = async () => {
         const res = await axios.get('http://127.0.0.1:8000/events')
