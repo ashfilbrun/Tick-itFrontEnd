@@ -1,4 +1,6 @@
 import { Link } from 'react-router-dom'
+import { useContext } from 'react'
+import Context from '../Context'
 
 
 export default function Nav () {
@@ -8,9 +10,9 @@ export default function Nav () {
       <div className='navBar'>
         <ul className='navItems'>
           <li><Link to='/'>Home</Link></li>
-          <li><Link to='/event'>Event</Link></li>
-          <li><Link to='/venue'>Venue</Link></li>
-          <li><Link to='/cart'>Cart</Link></li>
+          <li><Link to='/EventList'>Events</Link></li>
+          <li><Link to='/VenueList'>Venues</Link></li>
+          <li><Link to='/ShoppingCart'>Cart</Link></li>
         </ul>
       </div>
     </div>
