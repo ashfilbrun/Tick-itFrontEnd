@@ -12,7 +12,7 @@ Users can view events and venues in their area, as well as add and purchase tick
 - Ashlan Filbrun: [Ashlan's GitHub](https://github.com/ashfilbrun) [Ashlan's LinkedIn]()
 - Elliot Hill: [Elliot's GitHub](https://github.com/elliotvhill)
 - Tsion Molla: [Tsion's GitHub](https://github.com/Tsion-oss)
-- _Special thanks to [Kevin Li](https://github.com/kevinleet)!_
+- _**BIG** special thanks to [Kevin Li](https://github.com/kevinleet)!_
 
 ## Technologies Used:
 - We used [Trello](https://trello.com/b/BBSNESHE/tick-it-full-stackathon-trello) to track our progress
