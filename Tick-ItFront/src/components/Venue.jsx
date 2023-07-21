@@ -12,8 +12,8 @@ export default function Venue() {
         navigate(`${event._id}`)
     }
     const getEvents = async () => {
-        const eventList = await axios.get('http://127.0.0.1:8000/venues/events')
-        setEvents(eventList.data.data)
+        const eventList = await axios.get('http://127.0.0.1:8000/venues')
+        setEvents(eventList.venue_name.event_name)
     }
 
     useEffect(() => {
