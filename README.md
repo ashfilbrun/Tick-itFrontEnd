@@ -2,7 +2,7 @@
 
 CLICK HERE TO LAUNCH <a href=''>Tick-It</a>
 
-<img alt="A photo of Radio City Music Hall illuminated at night. Photo by Bao Dang from Pexels." src="https://github.com/ashfilbrun/Tick-itFrontEnd/Tick-ItFront/src/assets/radio-city.jpg" width=30% height=60% />
+<img alt="A photo of Radio City Music Hall illuminated at night. Photo by Bao Dang from Pexels." src="https://github.com/ashfilbrun/Tick-itFrontEnd/blob/4d5149888874d405b7acd7f9e4cf4e0d5d278410/radio-city.jpg" width=30% height=60% />
 
 ## Description
 Tick-iT is a full stack web application built using a Django RESTful API on the back-end and React.js on the front-end.
