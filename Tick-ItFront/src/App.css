@@ -3,7 +3,7 @@ html {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-image: url("../src/assets/BG_10.jpg");
+  background-image: url("../src/assets/pexels-wolfgang-2747446.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   font-family: 'Inter', sans-serif;
@@ -46,7 +46,7 @@ h1 {
   align-items: center;
   font-family: 'Caveat', cursive;
   font-size: 90px;
-  color: black;
+  color: white;
   text-decoration: none;
   margin: 10px;
   letter-spacing: 7px;
