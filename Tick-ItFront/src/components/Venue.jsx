@@ -13,7 +13,7 @@ export default function Venue() {
     }
     const getEvents = async () => {
         const eventList = await axios.get('http://127.0.0.1:8000/venues')
-        setEvents(eventList.venue_name.event_name)
+        setEvents(eventList.event_name)
     }
 
     useEffect(() => {
@@ -22,12 +22,11 @@ export default function Venue() {
     
     return events ? (
         <div className="main-container">
-            <h2>Specific Event Page</h2>
             <div className="venueEvents">
             {
                 events.map((event, id) => (
                     <div onClick={() => showEvent(event)} key={event._id}>
-                        <p>{event.event_name}</p>
+                        <h2>{event.event_name}</h2>
                     </div>
             ))}
             </div>

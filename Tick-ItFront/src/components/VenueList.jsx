@@ -21,7 +21,7 @@ export default function VenueList() {
     
     return venues ? (
         <div className="main-container">
-            <h2>Venue List page</h2>
+            <h2>Venues</h2>
             <div className="venue">
                 {
                     venues.map((venue) => (

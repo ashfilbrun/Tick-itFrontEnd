@@ -29,7 +29,6 @@ export default function Event(props) {
     
     return events ? (
         <div className="main-container">
-            <h2>Specific Event Page</h2>
             <div className="specificEvents">
             {/* {
                 events.map((event, id) => (
@@ -37,7 +36,10 @@ export default function Event(props) {
                         <p>{event.event_name}</p>
                     </div>
             ))} */}
-                <h1>{events.event_name}</h1>
+                <h2>{events.event_name}</h2>
+                <p>Event type: {events.event_type}</p>
+                <p> {events.event_date} @ {events.event_time}</p>
+                <p>{events.event_description}</p>
             </div>
         </div>
     ) : <h3>Loading...</h3>

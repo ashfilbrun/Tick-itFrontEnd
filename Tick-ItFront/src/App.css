@@ -54,7 +54,7 @@ h1 {
 
 h2 {
   font-family:  'Caveat', cursive;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 link:visited {
@@ -67,6 +67,8 @@ h3 {
   justify-content: center;
   align-items: center;
   color: black;
+  font-weight: bold;
+  font-size: 25px;
 }
 
 /* footer {
@@ -91,7 +93,7 @@ button {
   padding: 5px;
   align-items: center;
   border: 3px solid black;
-  border-radius: 30%;
+  border-radius: 30px;
 }
 
 .container {
@@ -114,18 +116,122 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 5px;
+  /* padding: 5px; */
   list-style: none;
 }
 
-.main-container {
-  min-height: 70vh
+.navList {
+  padding: 0;
+  font-size: 20px;
 }
 
-li {
+.eventUl {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.eventBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin: 20px;
+  min-width: 400px;
+  padding: 20px;
+  border: 2px solid rgba(211, 211, 211, 0.167);
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.371);
+  background-color: rgb(211, 211, 211, 0.75);
+}
+
+.welcomeMessage {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin: 20px;
+  min-width: 400px;
+  padding: 20px;
+  border: 2px solid rgba(211, 211, 211, 0.167);
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.371);
+  background-color: rgb(211, 211, 211, 0.75);
+}
+
+.venueEvents {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin: 20px;
+  border: 2px solid rgba(211, 211, 211, 0.167);
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.371);
+  background-color: rgb(211, 211, 211, 0.75);
+}
+
+.specificEvents {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 20px;
+  border: 2px solid rgba(211, 211, 211, 0.167);
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.371);
+  background-color: rgb(211, 211, 211, 0.75);
+  padding: 10px;
+}
+
+
+.venueBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  margin: 20px;
+  border: 2px solid rgba(211, 211, 211, 0.167);
+  box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.371);
+  background-color: rgb(211, 211, 211, 0.75);
+  max-width: 700px;
+}
+
+#addToCart {
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+  font-size: 30px;
+  padding-left: 0;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 50vh;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+#navList {
   padding-left: 100px;
   padding-right: 100px;
   font-size: 30px;
+}
+
+li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 20px;
+  padding: 5px;
 }
 
 a:visited {
@@ -133,7 +239,8 @@ a:visited {
   color: black;
 }
 
-a{
+a {
+  color: black;
   text-decoration: none;
 }
 

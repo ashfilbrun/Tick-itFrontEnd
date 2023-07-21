@@ -22,7 +22,7 @@ export default function EventList (props) {
     
     return events ? (
         <div className="main-container">
-            <h2>Event List page</h2>
+            <h2>Events</h2>
             <div className="event">
                 {
                     events.map((event) => (
@@ -44,13 +44,6 @@ export default function EventList (props) {
                     ) )
             }
  
-                <h3>
-                    {/* ${Event/:id} */}
-                    CREEDENCE CLEARWATER REVIVAL:
-                    Live on tour!</h3>
-                <p>Date</p>
-                <p>Time</p>
-                <p><Link to={`/event/${event.id}`}>Buy Ticket(s)</Link></p>
             </div>
         </div>
     ) : <div>Loading...</div>
