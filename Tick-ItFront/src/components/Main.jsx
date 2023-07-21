@@ -4,6 +4,7 @@ import VenueList from '../components/VenueList'
 import Event from '../components/Event'
 import EventList from '../components/EventList'
 import ShoppingCart from '../components/ShoppingCart'
+import Header from '../components/Header'
 import Home from '../components/Home'
 
 export default function Main () {
@@ -16,7 +17,7 @@ export default function Main () {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/event/:id' element={<Event />} />
-        <Route path='/event' element={<EventList />} />
+        <Route path='/eventlist' element={<EventList />} />
         <Route path='/venue/:id' element={<Venue />} />
         <Route path='/venue' element={<VenueList />} />
         <Route path='/cart' element={<ShoppingCart />} /> 
