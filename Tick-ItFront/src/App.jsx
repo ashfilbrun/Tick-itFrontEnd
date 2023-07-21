@@ -9,11 +9,11 @@ function App() {
 
   return (
     <div className='app'>
-      <Context.Provider>
+      <div>
         <Header />
         <Main />
         <Footer />
-      </Context.Provider>
+      </div>
     </div>
   )
 }

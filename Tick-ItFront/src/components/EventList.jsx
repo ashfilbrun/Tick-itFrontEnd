@@ -14,10 +14,10 @@ export default function EventList() {
         getEvents()
     }, [])
 
-    // let navigate = useNavigate()
-    //     const showEvent = (id) => {
-    //         navigate(`/Event/${id}`)
-    // }
+    let navigate = useNavigate()
+        const showEvent = (id) => {
+            navigate(`/Event/${id}`)
+    }
     
     return events ? (
         <div className="main-container">
@@ -25,8 +25,8 @@ export default function EventList() {
             <div className="event">
                 {
                     events.map((event) => (
+                        <div className="eventBox">
                         <div key={event.event_name} className="event-info" onClick={() => showEvent(event)}>
-                            <div className="eventBox">
                                 <h3>{event.event_name}</h3>
                                 <ul className="eventUl">
                                     {/* <li>{event.venue_name}</li> */}
@@ -37,6 +37,7 @@ export default function EventList() {
                                     <li>Tickets left: {event.ticket_quantity}</li>
                                     <li><button id="addToCart">Add ticket to cart</button></li>
                                 </ul>
+                                <Link to={`/EventList${event.id}`}>View details</Link>
                             </div>
                             </div>
                     ) )
