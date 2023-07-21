@@ -25,8 +25,8 @@ export default function EventList() {
             <div className="event">
                 {
                     events.map((event) => (
-                        <div className="eventBox">
                         <div key={event.event_name} className="event-info" onClick={() => showEvent(event)}>
+                            <div className="eventBox">
                                 <h3>{event.event_name}</h3>
                                 <ul className="eventUl">
                                     {/* <li>{event.venue_name}</li> */}
