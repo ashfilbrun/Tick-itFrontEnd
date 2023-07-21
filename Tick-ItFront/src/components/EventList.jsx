@@ -7,8 +7,8 @@ export default function EventList() {
     const [events, setEvents] = useState([])
     const getEvents = async () => {
         const res = await axios.get('http://127.0.0.1:8000/events')
-        console.log(res)
-        setEvents(res)
+        console.log(res.data)
+        setEvents(res.data)
     }
     useEffect(() => {
         getEvents()
@@ -23,13 +23,13 @@ export default function EventList() {
         <div className="main-container">
             <h2>Event List page</h2>
             <div className="event">
-                {/* {
-                    events.data.map((event) => (
+                {
+                    events.map((event) => (
                         <div key={event.event_name} className="event-info" onClick={() => showEvent(event)}>
                             <div className="eventBox">
                                 <h3>{event.event_name}</h3>
                                 <ul className="eventUl">
-                                    <li>{event.venue_name}</li>
+                                    {/* <li>{event.venue_name}</li> */}
                                     <li>{event.event_type}</li>
                                     <li>Event date: {event.event_date}</li>
                                     <li>Event time: {event.event_time}</li>
@@ -40,7 +40,7 @@ export default function EventList() {
                             </div>
                             </div>
                     ) )
-            } */}
+            }
  
                 <h3>
                     {/* ${Event/:id} */}
