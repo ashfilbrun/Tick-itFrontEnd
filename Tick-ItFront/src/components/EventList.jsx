@@ -3,7 +3,8 @@ import * as React from 'react'
 import axios from 'axios'
 import { useState, useEffect } from 'react'
 
-export default function EventList() {
+
+export default function EventList () {
     const [events, setEvents] = useState([])
     const getEvents = async () => {
         const res = await axios.get('http://127.0.0.1:8000/events')
@@ -14,10 +15,10 @@ export default function EventList() {
         getEvents()
     }, [])
 
-    // let navigate = useNavigate()
-    //     const showEvent = (id) => {
-    //         navigate(`/Event/${id}`)
-    // }
+    let navigate = useNavigate()
+        const showEvent = (id) => {
+            navigate(`/Event/${id}`)
+    }
     
     return events ? (
         <div className="main-container">
@@ -37,6 +38,7 @@ export default function EventList() {
                                     <li>Tickets left: {event.ticket_quantity}</li>
                                     <li><button id="addToCart">Add ticket to cart</button></li>
                                 </ul>
+                                <Link to={`/EventList${event.id}`}>View details</Link>
                             </div>
                             </div>
                     ) )

@@ -11,7 +11,7 @@ export default function Nav () {
         <ul className='navItems'>
           <li><Link to='/'>Home</Link></li>
           <li><Link to='/EventList'>Events</Link></li>
-          <li><Link to='/VenueList'>Venues</Link></li>
+          <li><Link to='/venue'>Venues</Link></li>
           <li><Link to='/ShoppingCart'>Cart</Link></li>
         </ul>
       </div>

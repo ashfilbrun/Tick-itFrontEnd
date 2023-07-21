@@ -1,19 +1,36 @@
 import ShoppingCart from "./ShoppingCart"
 import VenueList from './VenueList'
-import { Link } from 'react'
+import axios from 'axios'
+import React, { useState, useEffect } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-export default function Event(){
-    return(
+export default function Venue() {
+    const [events, setEvents] = useState([])
+
+    let navigate = useNavigate()
+    const showEvent = (event) => {
+        navigate(`${event._id}`)
+    }
+    const getEvents = async () => {
+        const eventList = await axios.get('http://127.0.0.1:8000/venues')
+        setEvents(eventList.venue_name.event_name)
+    }
+
+    useEffect(() => {
+        getEvents()
+    }, [])
+    
+    return events ? (
         <div className="main-container">
             <h2>Specific Event Page</h2>
-            <div className="item">
-                <p>Venue Name</p>
-                <p>Address of Venue</p>
-                <p>Hours of operation</p>
-                <p>Seating Type</p>
-                <p>Capacity of Venue</p>
-                <p><Link to='venue/:id/events'>Events</Link></p>
+            <div className="venueEvents">
+            {
+                events.map((event, id) => (
+                    <div onClick={() => showEvent(event)} key={event._id}>
+                        <p>{event.event_name}</p>
+                    </div>
+            ))}
             </div>
         </div>
-    )
+    ) : <h3>Loading...</h3>
 }
